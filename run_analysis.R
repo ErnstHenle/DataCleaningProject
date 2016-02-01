@@ -85,4 +85,4 @@ MeanByActivitySubject <- summarise_each(GroupedByActivitySubject, funs(mean))
 #######################################################
 # Persist both tidy data sets as csv files in working directory
 write.csv(CombinedData, "CombinedData.csv", row.names=F)
-write.csv(MeanByActivitySubject, "MeanByActivitySubject.csv", row.names=F)
+write.table(MeanByActivitySubject, "MeanByActivitySubject.txt", row.names=F)
