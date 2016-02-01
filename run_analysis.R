@@ -6,14 +6,14 @@
 
 #######################################################
 # 0 Download data
-ZipFileName <- "./data/getdata_projectfiles_UCI HAR Dataset.zip"
+ZipFileName <- "./getdata_projectfiles_UCI HAR Dataset.zip"
 if(!file.exists(ZipFileName))
 {
   fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(fileUrl, destfile=ZipFileName)
 }
 
-# Assume getdata_projectfiles_UCI HAR Dataset.zip was downloaded to ./data
+# Assume getdata_projectfiles_UCI HAR Dataset.zip was downloaded
 # read and combine train data
 X_trainFileName <- "UCI HAR Dataset/train/X_train.txt"
 XTrain <- read.table(unz(ZipFileName, X_trainFileName))
