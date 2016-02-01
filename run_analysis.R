@@ -83,6 +83,6 @@ GroupedByActivitySubject <- group_by(CombinedData, Activity, Subject)
 MeanByActivitySubject <- summarise_each(GroupedByActivitySubject, funs(mean))
 
 #######################################################
-# Persist both tidy data sets as csv files in working directory
+# Persist both tidy data sets as files in working directory
 write.csv(CombinedData, "CombinedData.csv", row.names=F)
 write.table(MeanByActivitySubject, "MeanByActivitySubject.txt", row.names=F)
