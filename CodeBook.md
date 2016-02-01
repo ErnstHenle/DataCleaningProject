@@ -35,10 +35,10 @@ run_analytics.R
 * use group_by() and summarise_each() to determine the mean for each subject and activity of each variable
 * The reslut is a new tidy data set called MeanByActivitySubject
 
-### Persist both tidy data sets as csv files in working directory
+### Persist both tidy data sets as files in working directory
 * Creates dataset files
 * save the first tidy data to the current directory as CombinedData.csv
-* save the second tidy data to the current directory as MeanByActivitySubject.csv
+* save the second tidy data to the current directory as MeanByActivitySubject.txt
 
 ## CombinedData.csv
 A csv file with 10299 rows and 81 columns.
@@ -126,7 +126,7 @@ A csv file with 10299 rows and 81 columns.
 * Activity
 * Subject
 
-## MeanByActivitySubject.csv
+## MeanByActivitySubject.txt
 A csv file with 180 rows and 81 columns.
 
 ### Columns
